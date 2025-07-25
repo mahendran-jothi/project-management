@@ -35,29 +35,9 @@ This is a full-stack project containing:
 
    - **MongoDB URI** is set in `src/config/database.config.ts`:
 
-     ```ts
-     export default () => ({
-       uri: "mongodb+srv://project-management-user:kOjgopFvAdULllIO@project-management-clus.kryuiat.mongodb.net/project-management?retryWrites=true&w=majority&appName=project-management-cluster",
-     });
-     ```
-
    - **JWT Configuration** is in `src/config/jwt.config.ts`:
 
-     ```ts
-     export default () => ({
-       secret:
-         "9971558cbce6a56e5c3ca2de430cfd64678d2707fbfe71453189c5dff1a36aa0",
-       signOptions: { expiresIn: "1d" },
-     });
-     ```
-
    - **Server Port** is set in `src/config/port.config.ts`:
-
-     ```ts
-     export default () => ({
-       port: 3000,
-     });
-     ```
 
 4. Run the backend server in development mode:
 
