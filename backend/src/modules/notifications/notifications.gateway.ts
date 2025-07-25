@@ -50,9 +50,9 @@ export class NotificationsGateway implements OnGatewayConnection, OnGatewayDisco
 
     notifyViewers(event: string, data: any) {
         for (const [socketId, role] of this.socketRoles.entries()) {
+            this.notificationsService.create(data.projectId, data.message);
             if (role === 'Viewer') {
                 this.server.to(socketId).emit(event, data);
-                this.notificationsService.create(data.projectId, data.message);
             }
         }
     }
