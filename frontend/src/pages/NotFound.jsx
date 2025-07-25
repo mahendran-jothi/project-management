@@ -1,4 +1,9 @@
+import { useEffect } from "react";
+
 const NotFound = () => {
+  useEffect(() => {
+    document.title = "Project Management | Notfound";
+  }, []);
   return (
     <div
       className="container d-flex align-items-center justify-content-center"

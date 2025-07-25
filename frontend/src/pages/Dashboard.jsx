@@ -3,7 +3,7 @@ import { useEffect } from "react";
 
 const Dashboard = () => {
   useEffect(() => {
-    document.title = "Dashboard | Project Management";
+    document.title = "Project Management | Dashboard";
   }, []);
   return (
     <div className="">
